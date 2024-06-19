@@ -1,64 +1,132 @@
-header{
+header {
     position: sticky;
     top: 0;
+    z-index: 999;
+
     a {
-            color: #f1f1f1;
-        }
-    .header-navbar__top{
-background-color: #1F1D14;
-padding: 5px 60px;
-display: flex;
-color: #f1f1f1;
-justify-content: space-between;
-align-items: center;
-.header-left{
-    align-items: center;
-    display: flex;
-    gap: 40px;
-    .header-logo{
+        color: #f1f1f1;
+    }
+
+    .header-navbar__top {
+        background-color: #1F1D14;
+        padding: 5px 60px;
         display: flex;
+        color: #f1f1f1;
+        justify-content: space-between;
         align-items: center;
-        gap: 10px;
-        h2{
-         width: 60px;
-        color: var(--white, #FFF);
-            font-family: "Fira Sans";
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 28px;
-          
+
+        .header-left {
+            align-items: center;
+            display: flex;
+            gap: 40px;
+
+            .header-logo {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                h2 {
+                    width: 60px;
+                    color: var(--white, #FFF);
+                    font-family: "Fira Sans";
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 28px;
+
+                }
+            }
+
+            .header-list {
+                display: flex;
+                gap: 20px;
+
+            }
         }
-    }
-    .header-list{
-        display: flex;
-        gap: 20px;
-     
-    }
-}
 
-
-    }
         .header-right {
             display: flex;
             align-items: center;
             gap: 20px;
-            background-color: #fff;
+
+            .header-actions {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+            }
+
+            .burger {
+                display: none;
+            }
+
+            button {
+                padding: 10px;
+                border: 1px solid #ecec09;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+
+                span {
+                    color: #ecec09;
+                }
+            }
+
         }
-    .header-navbar__bottom{
-background-color: #ecec09;
-padding: 10px 60px;
+
+    }
+
+    .header-navbar__bottom {
+        background-color: #ecec09;
+        padding: 10px 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .hbottom-left {
+            display: flex;
+            gap: 10px;
+
+            input {
+                padding: 16px;
+                font-size: 16px;
+                border: 1px solid black;
+                cursor: pointer;
+                border-radius: 3px;
+            }
+        }
+
+        .hbottom-right {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            .search {
+                    display: none;
+                }
+            button {
+                padding: 10px;
+                border: 1px solid #0a0a0a;
+                border-radius: 3px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                -ms-border-radius: 3px;
+                -o-border-radius: 3px;
+}
+        }
     }
 }
 
- 
+
 .dropbtn {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #eeff00;
+    color: rgb(0, 0, 0);
     padding: 16px;
     font-size: 16px;
-    border: none;
+    border: 1px solid black;
     cursor: pointer;
+    border-radius: 3px;
+
 }
 
 .dropdown {
@@ -92,5 +160,38 @@ padding: 10px 60px;
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: #000000;
+    color: #ecec09;
+}
+
+@media (max-width:992px) {
+    header {
+        .header-navbar__top {
+            .header-left {
+                .header-list {
+                    display: none;
+                }
+            }
+
+            .header-right {
+                .burger {
+                    display: block;
+                }
+            }
+        }
+ .header-navbar__bottom{
+    .hbottom-left{
+        .header-inp{
+            display: none;
+        }
+       
+    }
+         .hbottom-right {
+             .search {
+                 display: block;
+             }
+         }
+ }
+    }
+
 }
