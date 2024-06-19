@@ -9,7 +9,7 @@ header {
 
     .header-navbar__top {
         background-color: #1F1D14;
-        padding: 5px 60px;
+        padding: 5px 100px;
         display: flex;
         color: #f1f1f1;
         justify-content: space-between;
@@ -67,6 +67,7 @@ header {
                 -moz-border-radius: 50%;
                 -ms-border-radius: 50%;
                 -o-border-radius: 50%;
+                display: none;
 
                 span {
                     color: #ecec09;
@@ -79,7 +80,7 @@ header {
 
     .header-navbar__bottom {
         background-color: #ecec09;
-        padding: 10px 60px;
+        padding: 10px 100px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -91,9 +92,10 @@ header {
             input {
                 padding: 16px;
                 font-size: 16px;
-                border: 1px solid black;
+                border:none;
                 cursor: pointer;
                 border-radius: 3px;
+                width: 400px;
             }
         }
 
@@ -106,7 +108,7 @@ header {
                 }
             button {
                 padding: 10px;
-                border: 1px solid #0a0a0a;
+                border: none;
                 border-radius: 3px;
                 -webkit-border-radius: 3px;
                 -moz-border-radius: 3px;
@@ -114,10 +116,10 @@ header {
                 -o-border-radius: 3px;
 }
         }
+    
     }
+
 }
-
-
 .dropbtn {
     background-color: #eeff00;
     color: rgb(0, 0, 0);
@@ -164,9 +166,24 @@ header {
     color: #ecec09;
 }
 
+@media (max-width:628px) {
+    header {
+        .header-navbar__top {
+            padding: 0 80px;
+            }
+        }
+
+        .header-navbar__bottom {
+            padding: 0 80px;
+        }
+    }
+
+
+
 @media (max-width:992px) {
     header {
         .header-navbar__top {
+            padding: 0 40px;
             .header-left {
                 .header-list {
                     display: none;
@@ -174,12 +191,19 @@ header {
             }
 
             .header-right {
+                a{
+                    display: none;
+                }
+                button {
+                        display: block;
+                    }
                 .burger {
                     display: block;
                 }
             }
         }
  .header-navbar__bottom{
+    padding: 0 40px;
     .hbottom-left{
         .header-inp{
             display: none;
@@ -187,6 +211,7 @@ header {
        
     }
          .hbottom-right {
+            
              .search {
                  display: block;
              }
@@ -195,3 +220,36 @@ header {
     }
 
 }
+@media (max-width:1200px) {
+header {
+   
+        .header-navbar__top {
+            padding: 0 20px;
+
+            .header-left {
+                .header-list {
+                    display: none;
+                }
+            }
+
+        }
+
+    }
+}
+@media (max-width:1300px) {
+header {
+   
+        .header-navbar__top {
+            padding: 0 20px;
+
+            .header-left {
+                .header-list {
+                    display: none;
+                }
+            }
+
+        }
+
+    }
+}
+   
