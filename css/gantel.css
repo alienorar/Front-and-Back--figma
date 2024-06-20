@@ -394,4 +394,65 @@ header .header-navbar__bottom .hbottom-right button {
   .sale .aksiya-items {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+.footer {
+  background-color: black;
+  color: white;
+  border-top: 20px solid yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+}
+.footer__all {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 20px;
+}
+.footer__card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+}
+.footer__card h4 {
+  display: flex;
+  gap: 10px;
+  align-items: start;
+  justify-content: center;
+}
+.footer__card__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px;
+}
+.footer__card__form h4 {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.footer__card__form input {
+  width: 100%;
+  height: 35px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+.footer__card__form button {
+  background-color: yellow;
+  color: black;
+  border: none;
+  width: 100%;
+  height: 35px;
+  border-radius: 4px;
+}
+.footer__card__icon {
+  display: flex;
+  gap: 20px;
 }/*# sourceMappingURL=gantel.css.map */
