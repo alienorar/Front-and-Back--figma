@@ -1,0 +1,30 @@
+.about{
+    padding: 40px 0;
+        background-color: #f2e8f7b1;
+        display: flex;
+        gap: 20px;
+        
+    .about-card{
+        width: 100%;
+        background-color: #1F1D14;
+        color: #FFFF;
+        padding: 60px 40px;
+        text-align: center;
+    }
+    .about-logos{
+        margin-top: 40px;
+        padding: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+background-color: #fff;
+gap: 10px;
+    }
+}
+@media (max-width:992px) {
+   .about{
+    .about-card{
+
+    }
+   }
+}

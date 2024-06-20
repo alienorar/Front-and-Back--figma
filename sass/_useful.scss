@@ -1,0 +1,51 @@
+.useful{
+    padding: 60px 0 0;
+    background-color: #ece6efb1;
+    .useful-cards{
+display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    .useful-card__st{
+        background-color: #fff;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .useful-st__bottom{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            span{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+}
+.useful-card__nd{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .useful-card__img{
+background-color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+    }
+    .useful-nd__bottom{
+        background-color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+}
+    }
+   
+}
+@media (max-width:992px) {
+    .useful {
+            padding: 40px 0 0;
+            .useful-cards {
+                grid-template-columns: repeat(1, 1fr);
+               }
+}
+}
